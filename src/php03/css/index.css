@@ -1,0 +1,63 @@
+.quiz__content{/* クイズが入った外側の大きな箱 */
+    margin: 0 auto;/* 上下の余白0、左右は自動で中央寄せ */
+    padding: 60px 15px;/* 内側余白上下60px 左右15px */
+    max-width: 1230px;/* 横幅は最大1230pxまで */
+}
+
+.question{/* 問題が書かれた箱 */
+    margin: 0 auto;
+    padding: 10px 20 px;
+    width: 550px;
+    border-radius: 3px;/* 角は3px分丸く */
+    background: #000;
+    text-align: center;/* テキストは中央揃えで */
+}
+.question__text{/* 問題の文章 */
+    color:#fff;
+    text-align: left;
+}
+.quiz-form{/* クイズが入ったフォーム全体の箱 */
+    margin: 0 auto;
+    padding-top: 20px;
+    width: 550px;
+    text-align: center;
+}
+
+.quiz-form__item{/* 4択問題 */
+    margin-bottom: 30px;/* ４択問題の下の余白（回答との間の隙間） */
+}
+.quiz-form__group{
+    margin-bottom: 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+.quiz-form__radio{
+    display: none;
+    /* デフォルトである「ラジオボタンの⚪️」を見えなくする */
+}
+.quiz-form__radio:checked+label {
+    /* (checked+label)ラジオボタンが選択・クリックされた時に、選択されたばしょが薄い灰色に変わる */
+    background: #ddd;
+}
+
+.quiz-form__label{
+    display: block;
+    /* <label>はもともとインライン要素。自分の文字分の横幅しか持たない。ブロックにすることで、親要素の横幅いっぱい（この場合、quiz-formのwidth550px)まで広げることができ、paddingなどで縦方向にも広げることができる。 */
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    /* マウスを乗せると、指マークに変わる*/
+}
+.quiz-form__button{    /* 回答ボタン */
+    width: 550px;
+}
+.quiz-form__button-submit{
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}

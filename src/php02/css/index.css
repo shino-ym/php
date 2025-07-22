@@ -1,0 +1,44 @@
+.search-form__content{/* 検索フォーム全体をまとめる箱 */
+    margin: 0 auto;/* 上下の余白は０、左右は自動で中央寄せ */
+    padding: 60px 15px;/* 上下に60px、左右に15pxの内側余白 */
+    max-width: 1230px;/* 横幅の最大値は1230pxまで。1230pxは「pc表示でコンテンツを中央に収める最大幅」としてデザイン基準になっている。 */
+}
+
+.search-form__heading {/* 見出し部分。タイトルを入れている箱 */
+    margin-bottom: 40px;/* 下に40pxの外側余白 */
+    text-align: center;/* テキストは中央揃えにする */
+}
+.search-form__content-title{/* コンテンツタイトル */
+    text-align: center;/* テキストは中央揃え */
+}
+.search-form{
+    display: flex;/* earch-form__itemとearch-form__buttonを横並べにするために、display: flexを使う*/
+    justify-content: center;/* earch-form__itemとearch-form__buttonを横方向の中央に揃える。これがなかったら、検索フォームは左に寄る */
+}
+.search-form__item{/* 検索ボタンの隣のセレクトボックスの外側。 */
+    padding: 0 5px; /* 上下の余白0。左右5pxの余白（検索ボタンとの隙間が5px）  */
+    width: 300px;    /* 選択ボタンの幅が300px */
+}
+.search-form__item-select{/* セレクトボックスデザイン */
+    padding: 10px;/* 外側余白10px */
+    width: 100%;/* search-form__itemで設定した横幅300pxの100％*/
+    height: 40px;
+    border: 1px solid #ddd;/* 1pxの実線で、薄いグレーの枠線  */
+    border-radius: 3px;/* 枠の角を３px丸く */
+    appearance: none;/* ブラウザ標準のドロップダウン矢印などの見た目を消して、カスタムデザインを当てやすくする。普通に<select>デザインにすると、ブラウザの矢印が邪魔だったりする */
+}
+
+.earch-form__button{/* 検索ボタン */
+    padding: 0 5px;/* search-form__item と横並びになっているので、余白を合わせている。*/
+    width: 120px;
+}
+.search-form__button-submit{/* 検索ボタンのデザイン */
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: none;/* ブラウザ標準の枠を消して、スッキリ見せる */
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;/* マウスオーバー時に手の形になって、「押せる感」を出す */
+}
